@@ -1,11 +1,14 @@
 - image: book1.png
   description: "lorem ipsum"
   link: "https://x.com/SydSable"
+  buttontxt: "Buy"
 
-- image: book2.png
-  description: "lorem ipsum"
-  link: "https://x.com/SydSable"
+- image: redbubble.png
+  description: "Buy official merch!"
+  link: "https://www.redbubble.com/shop/ap/174639524"
+  buttontxt: "Shop"
 
-- image: book3.png
-  description: "lorem ipsum"
+- image: X.png
+  description: "Follow on X/Twitter"
   link: "https://x.com/SydSable"
+  buttontxt: "Follow"
