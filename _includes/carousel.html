@@ -1,0 +1,25 @@
+<section>
+  {% assign books = site.data.books %}
+  {% if books.size == 1 %}
+    {% assign books = books | concat: books %}
+  {% endif %}
+  
+  <div class="carousel-container">
+    <button class="carousel-btn left">&#10094;</button>
+    
+    <div class="carousel-viewport">
+      <div class="carousel-track">
+        {% for book in books %}
+        <div class="carousel-card">
+          <div class="carousel-image" style="background-image: url('{{ site.baseurl }}/assets/imgs/{{ book.image }}');"></div>
+          <p class="carousel-text">{{ book.description }}</p>
+          <a href="{{ book.link }}" class="carousel-button">Buy</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <button class="carousel-btn right">&#10095;</button>
+  </div>
+
+</section>

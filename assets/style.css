@@ -1,0 +1,277 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0a0a0a;
+  color: #eee;
+}
+
+/* Header Section */
+.header-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header-gif {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-left: 5px solid #e60000;
+  border-radius: 5px;
+}
+
+.header-logo {
+  height: 10vh;   /* logo takes 10% of viewport height */
+  width: auto;      /* auto width to keep aspect ratio */
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+  }
+
+  .header-gif {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ✅ center logo & text */
+    text-align: center;    /* ✅ center inline text content */
+  }
+
+  .header-logo {
+    display: block;
+    margin: 0 auto 8px;    /* ✅ center horizontally */
+    height: 7vh;           /* or adjust to taste */
+    width: auto;
+  }
+}
+
+
+/* Tiles Section */
+.tiles-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #111;
+}
+
+.tile {
+  background: #1a1a1a;          /* dark background */
+  border: 1px solid #e60000;    /* red border */
+  border-radius: 6px;
+  padding: 20px;
+  width: 30%;
+  min-width: 250px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  color: #ccc;                  /* gray text */
+}
+
+.tile:hover {
+  transform: scale(1.03);
+  border-color: #000;           /* red -> black */
+  background-color: #e60000;    /* black -> red */
+  color: #000;                  /* gray -> black */
+}
+
+/* Also update h2 and p colors on hover inside tile */
+.tile:hover h2 {
+  color: #000;                  /* red -> black */
+}
+
+.tile:hover p {
+  color: #000;                  /* gray -> black */
+}
+
+.tile h2 {
+  color: #e60000;
+  margin-bottom: 10px;
+}
+
+.tile p {
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tiles-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tile {
+    width: 90%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.footer-col-2 {
+  text-align: center; /* ⬅️ Center content inside this column */
+}
+
+.social-icons {
+  display: inline-flex; /* Shrinks to fit and centers in text-align */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon svg {
+  display: block;
+  color: #ff1a1a;
+  transition: color 0.3s ease;
+}
+
+.hover-white:hover svg {
+  color: white;
+}
+
+/* Carousel */
+
+/* Outer wrapper */
+.carousel-container {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  overflow: hidden;
+}
+
+/* Viewport shows only one card */
+.carousel-viewport {
+  width: calc(80vh * 2 / 3); 
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track with all cards */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  margin-left: 0;      /* REMOVE negative margin */
+  gap: 2vw;            /* Optional: spacing between cards */
+}
+
+/* Single card */
+.carousel-card {
+  flex: 0 0 100%;
+  height: 100%;
+  padding: 0 1vw;      /* Use padding instead of margin for internal spacing */
+  box-sizing: border-box;  /* Include padding within the width */
+  
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 5px solid #e60000;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: white;
+  text-align: center;
+}
+
+
+/* Card image */
+.carousel-image {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  margin: 0;
+}
+
+
+/* Text */
+.carousel-text {
+  margin-top: 2vh;
+  font-size: 2vh;
+}
+
+/* Button */
+.carousel-button {
+  margin-top: 1vh;
+  padding: 1.5vh 3vh;
+  font-size: 2vh;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 0.8vh;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-button:hover {
+  background-color: #c00000;
+}
+
+/* Arrows */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 5px solid #e60000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 4vh;
+  padding: 1vh 1.5vh;
+  cursor: pointer;
+  z-index: 2;
+  user-select: none;
+}
+
+.carousel-btn.left {
+  left: 2vw;
+}
+
+.carousel-btn.right {
+  right: 2vw;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
