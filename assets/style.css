@@ -28,51 +28,44 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(calc(-50% - 2.5px), -50%);
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
   padding: 20px 30px;
   border-left: 5px solid #e60000;
   border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;   /* stack logo + text vertically */
+  justify-content: center;  /* vertical centering inside .header-text */
+  align-items: center;      /* horizontal centering of children */
 }
 
 .header-logo {
-  height: 10vh;   /* logo takes 10% of viewport height */
-  width: auto;      /* auto width to keep aspect ratio */
-  display: block;
+  height: 10vh;
+  width: auto;
   margin-bottom: 10px;
+  display: block; /* optional, flex centering works without it */
 }
 
-@media (max-width: 600px) {
-  .header-section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: auto;
-  }
 
+@media (max-width: 600px) {
   .header-gif {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
+    max-height: 250px; /* smaller GIF for mobile */
   }
 
   .header-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* ✅ center logo & text */
-    text-align: center;    /* ✅ center inline text content */
+    padding: 15px 20px; /* reduce padding */
+    transform: translate(calc(-50% - 2.5px), -50%); /* keep border-adjustment */
+    font-size: 0.9rem; /* optional smaller text */
   }
 
   .header-logo {
-    display: block;
-    margin: 0 auto 8px;    /* ✅ center horizontally */
-    height: 7vh;           /* or adjust to taste */
-    width: auto;
+    height: 7vh; /* smaller logo for mobile */
+    margin-bottom: 8px;
   }
 }
+
 
 
 /* Tiles Section */
