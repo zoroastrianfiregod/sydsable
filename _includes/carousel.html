@@ -13,7 +13,7 @@
         <div class="carousel-card">
           <div class="carousel-image" style="background-image: url('{{ site.baseurl }}/assets/imgs/{{ book.image }}');"></div>
           <p class="carousel-text">{{ book.description }}</p>
-          <a href="{{ book.link }}" class="carousel-button">Buy</a>
+          <a href="{{ book.link }}" class="carousel-button">{{ book.buttontxt }}</a>
         </div>
         {% endfor %}
       </div>
