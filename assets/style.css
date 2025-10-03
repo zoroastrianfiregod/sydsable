@@ -326,26 +326,52 @@ footer {
   border-radius: 6px;
 }
 
-.lightbox-close {
-  top: 2vh;
-  right: 2vw;
+.carousel-btn-lightbox {
   position: absolute;
-  font-size: 5vh;
-  background: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 5px solid #e60000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 4vh;
+  padding: 1vh 1.5vh;
+  cursor: pointer;
+  z-index: 2;
+  user-select: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 6em;
+}
+
+.carousel-btn-lightbox.prev {
+  left: 15px;
+}
+
+.carousel-btn-lightbox.next {
+  right: 15px;
+  border-left: none;
+  border-right: 5px solid #e60000; /* flip the border for right button */
+  border-radius: 5px;
+}
+
+.lightbox-close {
+  top: 15px;
+  right: 15px;
+  transform: none;
+  font-size: 6vh;
+  background: rgba(0, 0, 0, 0.8);
   border: none;
-  color: #e60000;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  line-height: 1;
+  padding: 0;
 }
 
 .lightbox-close:hover {
   color: white;
 }
-
-/* Position arrows correctly */
-.carousel-btn-lightbox.left {
-  left: 2vw;
-}
-
-.carousel-btn-lightbox.right {
-  right: 2vw;
-}
-
