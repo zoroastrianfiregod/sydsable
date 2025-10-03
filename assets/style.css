@@ -8,6 +8,39 @@ body {
 }
 
 /* Header Section */
+/* Header Section for Pages */
+.page-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #0a0a0a;
+}
+
+/* Page Title */
+.page-title {
+  margin: 0;
+  color: #e60000;
+  font-size: 2.5rem;
+}
+
+/* Home Button */
+.home-button {
+  color: #e60000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border: 1px solid #e60000;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #e60000;
+  color: #0a0a0a;
+  border-color: black;
+}
+
 .header-section {
   position: relative;
   display: flex;
