@@ -1,6 +1,6 @@
 ---
 permalink: /illustrations
-layout: page
+layout: default
 title: Illustrations
 ---
 
