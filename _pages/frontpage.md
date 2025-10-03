@@ -9,7 +9,7 @@ title: Home
   <img src="{{ site.baseurl }}/assets/banner.gif" alt="Animated Header" class="header-gif">
   <div class="header-text">
     <img src="{{ site.baseurl }}/assets/imgs/LOGO.png" alt="Site Logo" class="header-logo">
-    <p>Author • Creator • Storyteller</p>
+    <p>Author • Illustrator • Storyteller</p>
   </div>
 </section>
 
