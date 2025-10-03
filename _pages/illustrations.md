@@ -3,16 +3,24 @@ permalink: /illustrations
 layout: page
 title: Illustrations
 ---
-{% assign illustrations = site.data.illustrations %}
-  {% if illustrations.size == 1 %}
-    {% assign illustrations = illustrations | concat: illustrations %}
-  {% endif %}
 
-<div class="carousel-track">
+{% assign illustrations = site.data.illustrations %}
+{% if illustrations.size == 1 %}
+  {% assign illustrations = illustrations | concat: illustrations %}
+{% endif %}
+
+<div class="tiles-section">
   {% for illustration in illustrations %}
-  <div>
-    <div class="carousel-image" style="background-image: url('{{ site.baseurl }}/assets/imgs/{{ illustration.image }}');"></div>
-    <p class="carousel-text">{{ illustrations.description }}</p>
-  </div>
+    <a 
+      href="{{ site.baseurl }}/assets/imgs/{{ illustration.image }}" 
+      data-lightbox="illustrations"
+      data-title="{{ illustration.description }}"
+      class="gallery-tile"
+    >
+      <div 
+        class="gallery-thumb" 
+        style="background-image: url('{{ site.baseurl }}/assets/imgs/{{ illustration.image }}');"
+      ></div>
+    </a>
   {% endfor %}
 </div>
