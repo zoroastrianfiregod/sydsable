@@ -2,7 +2,15 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {{ content }}
+    <header class="page-header">
+      <a href="{{ site.baseurl }}/" class="home-button">Home</a>
+      <h1 class="page-title">{{ page.title }}</h1>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
     {% include footer.html %}
   </body>
 </html>
