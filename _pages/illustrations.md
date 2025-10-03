@@ -26,7 +26,7 @@ title: Illustrations
 <!-- Custom Lightbox -->
 <div id="lightbox" class="custom-lightbox hidden">
   <div class="lightbox-top-bar">
-    <button class="lightbox-close" onclick="closeLightbox()">Close ✕</button>
+    <button class="carousel-btn-lightbox lightbox-close" onclick="closeLightbox()">×</button>
   </div>
   <button class="carousel-btn-lightbox prev" id="lightbox-prev" onclick="prevLightboxImage()">‹</button>
   <img id="lightbox-img" src="" alt="Lightbox image" />
