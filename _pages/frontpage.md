@@ -21,11 +21,11 @@ title: Home
   </div>
   <div class="tile">
     <h2>About</h2>
-    <a href="{{ site.baseurl }}/about" class="carousel-button"><p>Find out more about the Syd Sable project.</p></a>
+    <a href="{{ site.baseurl }}/about"><p>Find out more about the Syd Sable project.</p></a>
   </div>
   <div class="tile">
     <h2>Illustrations</h2>
-    <a href="{{ site.baseurl }}/illustrations" class="carousel-button"><p>Original artwork.</p></a>
+    <a href="{{ site.baseurl }}/illustrations"><p>Original artwork.</p></a>
   </div>
 </section>
 
