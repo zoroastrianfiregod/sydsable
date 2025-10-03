@@ -1,6 +1,6 @@
 ---
 permalink: /
-layout: default
+layout: frontpage
 title: Home
 ---
 
