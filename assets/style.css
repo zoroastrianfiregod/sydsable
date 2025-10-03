@@ -272,3 +272,29 @@ footer {
 .carousel-btn:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+/* Lightbox gallery styling to match your theme */
+.gallery-tile {
+  display: block;
+  width: 30%;
+  min-width: 250px;
+  margin: 10px;
+  text-decoration: none;
+  border: 1px solid #e60000;
+  border-radius: 6px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.gallery-thumb {
+  width: 100%;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.gallery-tile:hover {
+  transform: scale(1.03);
+  background-color: #e60000;
+  border-color: #000;
+}
