@@ -115,6 +115,10 @@ body {
   color: #ccc;
 }
 
+.tile-link {
+  text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .tiles-section {
