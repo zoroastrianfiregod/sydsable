@@ -15,18 +15,24 @@ title: Home
 
 <!-- Tiles Section -->
 <section class="tiles-section">
-  <div class="tile">
-    <h2>Book Title</h2>
-    <p>TBD.</p>
-  </div>
-  <div class="tile">
-    <h2>About</h2>
-    <a href="{{ site.baseurl }}/about" class="tile-link"><p>Find out more about the Syd Sable project.</p></a>
-  </div>
-  <div class="tile">
-    <h2>Illustrations</h2>
-    <a href="{{ site.baseurl }}/illustrations" class="tile-link"><p>Original artwork.</p></a>
-  </div>
+  <a href="{{ site.baseurl }}" class="tile-link">
+    <div class="tile">
+      <h2>Book Title</h2>
+      <p>TBD.</p>
+    </div>
+  </a>
+  <a href="{{ site.baseurl }}/about" class="tile-link">
+    <div class="tile">
+      <h2>About</h2>
+      <p>Find out more about the Syd Sable project.</p>
+    </div>
+  </a>
+  <a href="{{ site.baseurl }}/illustrations" class="tile-link">
+    <div class="tile">
+      <h2>Illustrations</h2>
+      <p>Original artwork.</p>
+    </div>
+  </a>
 </section>
 
 <script src="{{ site.baseurl }}/assets/scripts.js"></script>
