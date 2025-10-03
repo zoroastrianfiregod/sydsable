@@ -16,16 +16,16 @@ title: Home
 <!-- Tiles Section -->
 <section class="tiles-section">
   <div class="tile">
-    <h2>Book One</h2>
-    <p>A thrilling story of mystery and power.</p>
+    <h2>Book Title</h2>
+    <p>TBD.</p>
   </div>
   <div class="tile">
     <h2>About</h2>
-    <p>Discover the author and their creative journey.</p>
+    <a href="{{ site.baseurl }}/about" class="carousel-button"><p>Find out more about the Syd Sable project.</p></a>
   </div>
   <div class="tile">
-    <h2>Contact</h2>
-    <p>Reach out for interviews, events, or questions.</p>
+    <h2>Illustrations</h2>
+    <a href="{{ site.baseurl }}/illustrations" class="carousel-button"><p>Original artwork.</p></a>
   </div>
 </section>
 
