@@ -326,6 +326,7 @@ footer {
   border-radius: 6px;
 }
 
+/* Base Lightbox Button Styles */
 .carousel-btn-lightbox {
   position: absolute;
   top: 50%;
@@ -338,57 +339,52 @@ footer {
   padding: 1vh 1.5vh;
   cursor: pointer;
   z-index: 2;
-  user-select: none;
-  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 3em;
   height: 6em;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Left arrow */
 .carousel-btn-lightbox.prev {
-  left: 15px;
+  left: 1em;
 }
 
+/* Right arrow */
 .carousel-btn-lightbox.next {
-  right: 15px;
+  right: 1em;
   border-left: none;
-  border-right: 5px solid #e60000; /* flip the border for right button */
-  border-radius: 5px;
+  border-right: 5px solid #e60000;
 }
 
-.lightbox-top-bar {
-  position: absolute;
-  top: 15px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 20px;
-  z-index: 3;
+/* Hover effect: invert colors */
+.carousel-btn-lightbox:hover {
+  background-color: #e60000;
+  color: black;
+  border-color: black;
 }
 
+/* Close button specifically */
 .lightbox-close {
-  position: absolute;
-  top: 2vh;
-  right: 2vh;
+  top: 1em;
+  right: 1em;
   transform: none;
   font-size: 4vh;
   background: rgba(0, 0, 0, 0.8);
   border: none;
   border-radius: 0.5em;
+  padding: 0.5em 1em;
   width: auto;
   height: auto;
-  padding: 0.6em 1em;
   line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 3;
 }
 
+/* Hover effect for close button */
 .lightbox-close:hover {
-  color: white;
+  background-color: #e60000;
+  color: black;
 }
 
