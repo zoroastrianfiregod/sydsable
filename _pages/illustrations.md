@@ -24,12 +24,12 @@ title: Illustrations
 </div>
 
 <!-- Custom Lightbox -->
-<div id="lightbox" class="custom-lightbox hidden">
-  <span class="lightbox-close carousel-btn-lightbox right" onclick="closeLightbox()">×</span>
-  <span class="carousel-btn-lightbox left" onclick="prevLightboxImage()">❮</span>
-  <span class="carousel-btn-lightbox right" onclick="nextLightboxImage()">❯</span>
-  <img id="lightbox-img" src="" alt="Illustration">
-  <p id="lightbox-caption" class="carousel-text"></p>
+<div id="lightbox" class="hidden">
+  <button class="carousel-btn-lightbox prev" onclick="prevLightboxImage()">‹</button>
+  <img id="lightbox-img" src="" alt="Lightbox image" />
+  <button class="carousel-btn-lightbox next" onclick="nextLightboxImage()">›</button>
+  <div id="lightbox-caption"></div>
+  <button class="carousel-btn-lightbox close" onclick="closeLightbox()">×</button>
 </div>
 
 <!-- Gallery Image Data -->
