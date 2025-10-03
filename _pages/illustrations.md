@@ -24,7 +24,7 @@ title: Illustrations
 </div>
 
 <!-- Custom Lightbox -->
-<div id="lightbox" class="hidden">
+<div id="lightbox" class="custom-lightbox hidden">
   <button class="carousel-btn-lightbox prev" onclick="prevLightboxImage()">‹</button>
   <img id="lightbox-img" src="" alt="Lightbox image" />
   <button class="carousel-btn-lightbox next" onclick="nextLightboxImage()">›</button>
