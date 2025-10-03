@@ -5,22 +5,43 @@ title: Illustrations
 ---
 
 {% assign illustrations = site.data.illustrations %}
-{% if illustrations.size == 1 %}
-  {% assign illustrations = illustrations | concat: illustrations %}
-{% endif %}
 
 <div class="tiles-section">
   {% for illustration in illustrations %}
-    <a 
-      href="{{ site.baseurl }}/assets/imgs/{{ illustration.image }}" 
-      data-lightbox="illustrations"
-      data-title="{{ illustration.description }}"
-      class="gallery-tile"
+    <div 
+      class="gallery-tile" 
+      data-index="{{ forloop.index0 }}"
+      data-image="{{ site.baseurl }}/assets/imgs/{{ illustration.image }}"
+      data-description="{{ illustration.description }}"
+      onclick="openLightboxImage({{ forloop.index0 }})"
     >
       <div 
         class="gallery-thumb" 
         style="background-image: url('{{ site.baseurl }}/assets/imgs/{{ illustration.image }}');"
       ></div>
-    </a>
+    </div>
   {% endfor %}
 </div>
+
+<!-- Custom Lightbox -->
+<div id="lightbox" class="custom-lightbox hidden">
+  <span class="lightbox-close carousel-btn-lightbox right" onclick="closeLightbox()">×</span>
+  <span class="carousel-btn-lightbox left" onclick="prevLightboxImage()">❮</span>
+  <span class="carousel-btn-lightbox right" onclick="nextLightboxImage()">❯</span>
+  <img id="lightbox-img" src="" alt="Illustration">
+  <p id="lightbox-caption" class="carousel-text"></p>
+</div>
+
+<!-- Gallery Image Data -->
+<script>
+  const illustrationsLightbox = [
+    {% for illustration in illustrations %}
+      {
+        image: "{{ site.baseurl }}/assets/imgs/{{ illustration.image }}",
+        description: "{{ illustration.description | escape }}",
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+</script>
+
+<script src="{{ site.baseurl }}/assets/lightbox.js"></script>
