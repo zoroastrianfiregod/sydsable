@@ -8,7 +8,15 @@
     </header>
 
     <main>
-      {{ content }}
+      {%- comment -%}
+        Remove the first <h1> from content if it matches page.title to avoid duplication.
+      {%- endcomment -%}
+      {% capture first_h1 %}
+        <h1>{{ page.title }}</h1>
+      {% endcapture %}
+      
+      {% assign clean_content = content | replace_first: first_h1, '' %}
+      {{ clean_content }}
     </main>
 
     {% include footer.html %}
