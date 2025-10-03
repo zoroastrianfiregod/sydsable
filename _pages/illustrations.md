@@ -25,12 +25,15 @@ title: Illustrations
 
 <!-- Custom Lightbox -->
 <div id="lightbox" class="custom-lightbox hidden">
-  <button class="carousel-btn-lightbox prev" onclick="prevLightboxImage()">‹</button>
+  <div class="lightbox-top-bar">
+    <button class="lightbox-close" onclick="closeLightbox()">Close ✕</button>
+  </div>
+  <button class="carousel-btn-lightbox prev" id="lightbox-prev" onclick="prevLightboxImage()">‹</button>
   <img id="lightbox-img" src="" alt="Lightbox image" />
-  <button class="carousel-btn-lightbox next" onclick="nextLightboxImage()">›</button>
+  <button class="carousel-btn-lightbox next" id="lightbox-next" onclick="nextLightboxImage()">›</button> 
   <div id="lightbox-caption"></div>
-  <button class="carousel-btn-lightbox close" onclick="closeLightbox()">×</button>
 </div>
+
 
 <!-- Gallery Image Data -->
 <script>
