@@ -1,6 +1,6 @@
 title: Syd Sable
 description: Official Syd Sable website
-baseurl: "/sydsable" # GitHub Pages might require this to be set
+baseurl: "/" # GitHub Pages might require this to be set
 url: "https://zoroastrianfiregod.github.io" # Replace with your GitHub Pages URL
 
 minima:
