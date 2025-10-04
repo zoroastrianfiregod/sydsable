@@ -1,4 +1,19 @@
 /* Base styles */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+main {
+  flex: 1; /* fills available space between header and footer */
+}
+
 body {
   margin: 0;
   padding: 0;
