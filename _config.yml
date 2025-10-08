@@ -1,0 +1,31 @@
+title: Syd Sable
+description: Official Syd Sable website
+baseurl: "/" # GitHub Pages might require this to be set
+url: "https://zoroastrianfiregod.github.io/sydsable" # Replace with your GitHub Pages URL
+
+minima:
+  date_format: "%Y-%m-%d"
+
+social:
+  x: sydsable
+
+include:
+    - favicon.ico
+    - _pages
+    - _layouts
+    - _includes
+    - assets
+
+collections:
+  books:
+    output: true
+    permalink: /books/:name/
+
+# Build settings
+theme: minima
+plugins: []
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

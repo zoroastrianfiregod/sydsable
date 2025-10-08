@@ -1,0 +1,25 @@
+<section>
+  {% assign slides = site.data.slides %}
+  {% if slides.size == 1 %}
+    {% assign slides = slides | concat: slides %}
+  {% endif %}
+  
+  <div class="carousel-container">
+   <button class="arrow-button carousel-btn left">&#10094;</button>
+    
+    <div class="carousel-viewport">
+      <div class="carousel-track">
+        {% for slide in slides %}
+        <div class="carousel-card">
+          <div class="carousel-image" style="background-image: url('{{ site.baseurl }}/assets/imgs/{{ slide.image }}');"></div>
+          <p class="carousel-text">{{ slide.description }}</p>
+          <a href="{{ slide.link }}" class="carousel-button">{{ slide.buttontxt }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <button class="arrow-button carousel-btn right">&#10095;</button>
+  </div>
+
+</section>

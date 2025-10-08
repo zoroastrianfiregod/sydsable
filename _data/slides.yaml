@@ -1,0 +1,14 @@
+- image: /illustrations/sincordia/COVER.png
+  description: "Coming Soon"
+  link: "https://sydsable.com/books"
+  buttontxt: "Read"
+
+- image: /illustrations/WEEPING_ANGEL.jpg
+  description: "Buy official posters, no watermarks!"
+  link: "https://www.redbubble.com/people/SydSableShop/shop"
+  buttontxt: "Shop"
+
+- image: X.png
+  description: "Follow on X/Twitter"
+  link: "https://x.com/SydSable"
+  buttontxt: "Follow"

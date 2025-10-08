@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="site-wrapper">
+      <header class="page-header">
+        <a href="/blog" class="back-button">Back</a>
+        <h1 class="page-title">{{ page.title }}</h1>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
