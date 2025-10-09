@@ -28,6 +28,18 @@ layout: default
       </a>
     {% endif %}
 
+    {% if page.asin %}
+    <iframe 
+      style="width:120px;height:240px;" 
+      marginwidth="0" 
+      marginheight="0" 
+      scrolling="no" 
+      frameborder="0" 
+      src="https://read.amazon.com/kp/card?asin={{ page.asin }}&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_EXAMPLE">
+    </iframe>
+
+    {% endif %}
+
     <div class="book-content">
       {{ content }}
     </div>
