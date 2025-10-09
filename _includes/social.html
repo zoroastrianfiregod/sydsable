@@ -36,20 +36,29 @@
 
   {% if site.social.redbubble %}
   <a href="https://www.redbubble.com/people/{{ site.social.redbubble }}"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="social-icon redbubble-icon hover-white"
-     aria-label="Redbubble">
-    <svg xmlns="http://www.w3.org/2000/svg" 
-         viewBox="0 0 24 24" 
-         width="24" 
-         height="24" 
-         fill="currentColor"
-         aria-hidden="true">
-      <circle cx="12" cy="12" r="10" />
-      <path d="M7 17a5 5 0 0 0 10 0v-6h-2v6a3 3 0 0 1-6 0v-6H7v6z"/>
-    </svg>
-  </a>
+   target="_blank"
+   rel="noopener noreferrer"
+   class="social-icon redbubble-icon hover-white"
+   aria-label="Redbubble">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 24 24" 
+       width="24" 
+       height="24" 
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       aria-hidden="true">
+    <!-- Hollow circle -->
+    <circle cx="12" cy="12" r="10" />
+    <!-- "R" letter -->
+    <path d="M9 16V8h3a2 2 0 0 1 0 4h-2" />
+    <line x1="12" y1="12" x2="14" y2="16" />
+    <!-- "B" letter -->
+    <path d="M15 8v8a3 3 0 0 0 0-6h-1" />
+  </svg>
+</a>
   {% endif %}
 </div>
 {% endif %}
