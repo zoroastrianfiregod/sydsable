@@ -36,3 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateCarousel();
 });
+
+/* Kindle Instant Preview */
+function openPreviewModal() {
+    document.getElementById('previewModal').style.display = 'block';
+  }
+
+  function closePreviewModal() {
+    document.getElementById('previewModal').style.display = 'none';
+  }
