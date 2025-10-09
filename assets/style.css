@@ -270,12 +270,13 @@ footer {
 
 .social-icons {
   display: flex;
+  justify-content: center; /* centers icons horizontally */
   gap: 12px; /* space between icons */
   align-items: center;
 }
 
 .social-icon {
-  color: #ff1a1a; /* red icon color */
+  color: #ff1a1a; /* red color */
   transition: color 0.3s ease;
   display: inline-flex;
 }
@@ -288,10 +289,9 @@ footer {
   display: block;
   width: 24px;
   height: 24px;
-  fill: currentColor !important;
-  stroke: currentColor !important;
+  fill: currentColor;
+  stroke: currentColor;
 }
-
 
 .hover-white:hover svg {
   color: white;
