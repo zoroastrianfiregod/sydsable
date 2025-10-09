@@ -269,16 +269,29 @@ footer {
 }
 
 .social-icons {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  gap: 12px; /* space between icons */
   align-items: center;
+}
+
+.social-icon {
+  color: #000; /* default icon color */
+  transition: color 0.3s ease;
+  display: inline-flex;
+}
+
+.social-icon:hover {
+  color: #fff; /* hover color */
 }
 
 .social-icon svg {
   display: block;
-  color: #ff1a1a;
-  transition: color 0.3s ease;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  stroke: currentColor;
 }
+
 
 .hover-white:hover svg {
   color: white;
