@@ -8,6 +8,7 @@ title: Books
 
 <div class="tiles-section">
   {% for book in books %}
+  {% if book.published %}
     <div class="book-tile">
       <div 
         class="book-thumb" 
@@ -20,6 +21,7 @@ title: Books
         </a>
       </div>
     </div>
+  {% endif %}
   {% endfor %}
 </div>
 
