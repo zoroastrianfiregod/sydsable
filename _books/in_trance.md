@@ -1,4 +1,5 @@
 ---
+published: false
 layout: book
 title: IN TRANCE
 image: /in_trance/COVER.png
