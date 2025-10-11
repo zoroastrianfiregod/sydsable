@@ -1,4 +1,5 @@
 ---
+published: false
 layout: book
 title: Valkyria
 image: /valkyria/COVER.png
